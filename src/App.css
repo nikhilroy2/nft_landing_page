@@ -1,38 +1,166 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "VT323", monospace;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+#container_layout {
+  max-width: 1440px;
+  margin: auto;
+}
+
+#container_layout h1 {
+  font-size: 9.6rem;
+  text-align: center;
+  line-height: 2rem;
+  font-weight: normal;
+}
+
+#container_layout h2 {
+  font-size: 6.4rem;
+  text-align: center;
+  line-height: 2rem;
+  font-weight: normal;
+}
+
+#container_layout h3 {
+  font-size: 4.8rem;
+  text-align: center;
+  line-height: 2rem;
+  font-weight: normal;
+}
+
+#container_layout p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.6rem;
+  line-height: 3rem;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+#container_layout header#header {
+  padding: 1rem 9.2rem;
+}
+
+@media (max-width: 600px) {
+  #container_layout header#header {
+    padding: 1rem;
+  }
+}
+
+#container_layout header#header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container_layout header#header .left_box a:nth-child(1) {
+  margin-right: 3.4rem;
+}
+
+#container_layout header#header .right_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container_layout header#header .right_box .anchor_bg {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 12.5rem;
+  height: 5.6rem;
+  background: url("./assets/img/wh_btn.svg") no-repeat center/cover;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  line-height: 2rem;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: normal;
+}
+
+#container_layout header#header .right_box .anchor_bg:nth-child(1) {
+  margin-right: 2.1rem;
+}
+
+#container_layout header#header .logo_wrapper {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#container_layout header#header .logo_wrapper img {
+  display: inline-block;
+  width: 20.4rem;
+  height: 20.4rem;
+  margin-top: -3.4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#container_layout #Whitepaper {
+  margin-top: 5.9rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#container_layout #Whitepaper .content_wrapper {
+  margin-top: 3.1rem;
+}
+
+#container_layout #Whitepaper .content_wrapper .rarity {
+  margin-bottom: 0px;
+}
+
+#container_layout #Whitepaper .content_wrapper .content_sizer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: calc(100% - 23.5rem);
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+#container_layout #Whitepaper .content_wrapper .content_sizer h3 {
+  max-width: 4.8rem;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#container_layout #Whitepaper .content_wrapper .content_sizer_sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: calc(100% - 33.6rem);
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
+#container_layout #Whitepaper .content_wrapper .content_sizer_sm h3 {
+  max-width: 4.8rem;
+  text-align: center;
+}
+/*# sourceMappingURL=App.css.map */
