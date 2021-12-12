@@ -162,7 +162,7 @@ body {
   display: inline-block;
   width: 20.4rem;
   height: 20.4rem;
-  margin-top: -3.4rem;
+  margin-top: -6rem;
 }
 
 @media (max-width: 900px) {
@@ -773,7 +773,7 @@ body {
   background: white;
   max-width: 33.8rem;
   margin: auto;
-  height: 7.9rem;
+  height: 9rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -783,6 +783,7 @@ body {
   overflow-y: hidden;
   overflow-x: auto;
   padding: 0.5rem 1rem;
+  pointer-events: visible;
 }
 
 #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .content_img_wrapper .item .img_container .box {

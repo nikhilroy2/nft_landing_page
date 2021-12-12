@@ -142,6 +142,14 @@ function SmImgShield({ name, src }) {
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
+          <div className="img_item">
+            <img src={src} alt="img" />
+            <span>10,000</span>
+          </div>
+          <div className="img_item">
+            <img src={src} alt="img" />
+            <span>10,000</span>
+          </div>
         </div>
       </div>
     </div>
