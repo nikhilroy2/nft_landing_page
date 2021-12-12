@@ -5,26 +5,6 @@
   font-family: "VT323", monospace;
 }
 
-::-webkit-scrollbar {
-  height: 8px;
-}
-
-@media (max-width: 600px1) {
-  ::-webkit-scrollbar {
-    height: 5px;
-  }
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #6b6b6b;
-  outline: 1px solid slategrey;
-}
-
 html,
 body {
   margin: 0;
@@ -71,6 +51,26 @@ body {
   max-width: 1440px;
   position: relative;
   margin: auto;
+}
+
+#container_layout ::-webkit-scrollbar {
+  height: 8px;
+}
+
+@media (max-width: 600px1) {
+  #container_layout ::-webkit-scrollbar {
+    height: 5px;
+  }
+}
+
+#container_layout ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+#container_layout ::-webkit-scrollbar-thumb {
+  background-color: #6b6b6b;
+  outline: 1px solid slategrey;
 }
 
 #container_layout h1 {
