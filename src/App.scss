@@ -119,4 +119,38 @@ body {
       }
     }
   }
+  #RoadMap {
+    .roadMap_lineWrapper {
+      .road_line_1 {
+        display: flex;
+        justify-content: flex-end;
+        max-width: calc(100% - 17.1rem);
+        margin: auto;
+        .line {
+          width: 31.8rem;
+          height: 33.3rem;
+          background: #000;
+          background: url("./assets/img/line_1.png") left / contain no-repeat;
+        }
+        .line_text {
+          width: 41.4rem;
+        }
+      }
+      .road_line_2 {
+        display: flex;
+        justify-content: flex-start;
+        max-width: calc(100% - 16rem);
+        margin: auto;
+        .line_text {
+          width: 41.4rem;
+        }
+        .line {
+          width: 31.8rem;
+          height: 33.3rem;
+          background: #000;
+          background: url("./assets/img/line_2.png") left / contain no-repeat;
+        }
+      }
+    }
+  }
 }

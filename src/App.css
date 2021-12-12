@@ -163,4 +163,48 @@ body {
   max-width: 4.8rem;
   text-align: center;
 }
+
+#container_layout #RoadMap .roadMap_lineWrapper .road_line_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: calc(100% - 17.1rem);
+  margin: auto;
+}
+
+#container_layout #RoadMap .roadMap_lineWrapper .road_line_1 .line {
+  width: 31.8rem;
+  height: 33.3rem;
+  background: #000;
+  background: url("./assets/img/line_1.png") left/contain no-repeat;
+}
+
+#container_layout #RoadMap .roadMap_lineWrapper .road_line_1 .line_text {
+  width: 41.4rem;
+}
+
+#container_layout #RoadMap .roadMap_lineWrapper .road_line_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: calc(100% - 16rem);
+  margin: auto;
+}
+
+#container_layout #RoadMap .roadMap_lineWrapper .road_line_2 .line_text {
+  width: 41.4rem;
+}
+
+#container_layout #RoadMap .roadMap_lineWrapper .road_line_2 .line {
+  width: 31.8rem;
+  height: 33.3rem;
+  background: #000;
+  background: url("./assets/img/line_2.png") left/contain no-repeat;
+}
 /*# sourceMappingURL=App.css.map */
