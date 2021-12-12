@@ -6,12 +6,12 @@ function LogInPage(props) {
   const [cost, setCost] = useState(20000);
   function amountPlus() {
     setAmountItem(amountItem + 1);
-    setCost(cost + 1);
+    setCost(cost + 20000);
   }
   function amountMinus() {
     if (amountItem > 1) {
       setAmountItem(amountItem - 1);
-      setCost(cost - 1);
+      setCost(cost - 20000);
     }
   }
   return (
@@ -48,6 +48,7 @@ function DiamondImageControl() {
   return (
     <div className="diamong_image_wrapper">
       <div className="diamond_1"></div>
+      <div className="diamond_1 diamond_1_copy d-sm-none"></div>
       <div className="steel_1"></div>
       <div className="shield_wrapper">
         <h2>GAME STATS</h2>

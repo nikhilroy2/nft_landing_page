@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 function Header(props) {
+  //console.log(useLocation().pathname)
   return (
     <header id="header">
       <div className="wrapper">
         <div className="left_box">
-          <a href="#">
+          <Link to="/">
             <svg
               width="32"
               height="25"
@@ -18,7 +19,7 @@ function Header(props) {
                 fill="black"
               />
             </svg>
-          </a>
+          </Link>
 
           <a href="#">
             <svg
@@ -39,9 +40,15 @@ function Header(props) {
           <a href="#" className="anchor_bg">
             CONNECT WALLET
           </a>
-          <Link className="anchor_bg" to="/whitepaper">
-            WHITEPAPER
-          </Link>
+          {useLocation().pathname == "/whitepaper" ? (
+            <Link className="anchor_bg" to="/roadmap">
+              ROADMAP
+            </Link>
+          ) : (
+            <Link className="anchor_bg" to="/whitepaper">
+              WHITEPAPER
+            </Link>
+          )}
         </div>
       </div>
 

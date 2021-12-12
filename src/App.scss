@@ -22,6 +22,17 @@ body {
     }
   }
 }
+.d-none {
+  display: none;
+}
+@media (min-width: 572px) {
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-none {
+    display: none;
+  }
+}
 
 #container_layout {
   max-width: 1440px;
@@ -269,8 +280,21 @@ body {
   }
   #NoLogIn {
     pointer-events: none;
+
     p {
-      font-size: 2.4rem;
+      font-size: 34px !important;
+      max-width: 60rem;
+      margin: auto;
+    }
+    @media (max-width: 1500px) {
+      zoom: 0.8;
+      @media (max-width: 1160px) {
+        zoom: 0.6;
+        font-size: 24px !important;
+        p {
+          max-width: 50rem;
+        }
+      }
     }
     .diamong_image_wrapper {
       .diamond_1 {
@@ -280,6 +304,9 @@ body {
         top: -41rem;
         left: -35rem;
         border-radius: 0px;
+        @media (max-width: 1160px) {
+          top: -25rem;
+        }
       }
       .steel_1 {
         position: absolute;
@@ -288,6 +315,15 @@ body {
         top: -37.9rem;
         right: -35rem;
         border-radius: 0px;
+        @media (max-width: 1160px) {
+          top: -25rem;
+          @media (max-width: 592px) {
+            top: 35rem;
+          }
+        }
+      }
+      .diamond_1_copy{
+        top: 120rem;
       }
       .shield_wrapper {
         position: absolute;
@@ -299,6 +335,9 @@ body {
         background: url("./assets/img/SHIELD_RIGHT.png") center/100% 100%
           no-repeat;
         padding-left: 3.3rem;
+        @media (max-width: 1160px) {
+          top: 70rem;
+        }
         h2 {
           margin-bottom: 3rem;
         }
@@ -314,12 +353,16 @@ body {
           }
         }
       }
+
       .btn_control {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         z-index: 99;
         top: 125rem;
+        @media (max-width: 1160px) {
+          top: 150rem;
+        }
         .btn_roadmap {
           width: 35.3rem;
           height: 15.8rem;
@@ -334,7 +377,13 @@ body {
           color: #fff !important;
           background: url("./assets/img/roadmap_bg.png") center/100% 100%
             no-repeat;
+          @media (max-width: 592px) {
+            font-size: 5.4rem;
+          }
         }
+      }
+      .btn_control_top {
+        top: 52rem;
       }
     }
   }
@@ -349,7 +398,7 @@ body {
         margin: 0;
         padding: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         li {
           display: inline-block;
           width: 17.8rem;
@@ -361,6 +410,7 @@ body {
           align-items: center;
           text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
           user-select: none;
+          margin: 0px 2rem;
           p {
             font-size: 3.3rem;
             color: #fff;
@@ -386,6 +436,11 @@ body {
     }
     .diamong_image_wrapper {
       pointer-events: none;
+      @media (max-width: 1150px) {
+        transform: scale(0.8);
+        transform-origin: center -90rem;
+      }
+      // scale(.8)
       .diamond_1 {
         position: absolute;
         height: 207.9rem;
@@ -395,6 +450,13 @@ body {
         border-radius: 0px;
         background: url("./assets/img/diamond_2_log.png") 85% 89%/70% 76%
           no-repeat;
+        @media (max-width: 1300px) {
+          background: url("./assets/img/diamond_2_log.png") 58% 57%/61% 55%
+            no-repeat;
+        }
+        &.diamond_1_copy{
+          top: 65rem;
+        }
       }
       .steel_1 {
         position: absolute;
@@ -406,6 +468,13 @@ body {
         //background: url("./assets/img/steel_1_log.png") 40% 50% /50% 50% no-repeat;
         background: url("./assets/img/steel_1_log.png") 85% 89%/70% 76%
           no-repeat;
+        @media (max-width: 1300px) {
+          background: url("./assets/img/steel_1_log.png") 95% 57%/61% 55%
+            no-repeat;
+          @media (max-width: 1050px) {
+            top: 10rem;
+          }
+        }
       }
       .shield_wrapper {
         position: absolute;
@@ -418,6 +487,13 @@ body {
           no-repeat;
 
         padding-left: 3.3rem;
+        @media (max-width: 1300px) {
+          zoom: 0.7;
+          top: 73.6rem;
+          @media (max-width: 1050px) {
+            left: 36%;
+          }
+        }
         h2 {
           margin-bottom: 3rem;
         }
@@ -442,6 +518,14 @@ body {
         background: url("./assets/img/shield_2.png") center/100% 100% no-repeat;
         color: #fff;
         padding-left: 3.3rem;
+        @media (max-width: 1300px) {
+          zoom: 0.7;
+          top: 73.6rem;
+          @media (max-width: 1050px) {
+            top: 150.6rem;
+            right: 29.87%;
+          }
+        }
         * {
           text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
         }
@@ -533,6 +617,9 @@ body {
           color: #fff !important;
           background: url("./assets/img/roadmap_bg.png") center/100% 100%
             no-repeat;
+        }
+        @media (max-width: 1050px) {
+          top: 165rem;
         }
       }
     }

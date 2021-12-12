@@ -34,6 +34,19 @@ body {
   }
 }
 
+.d-none {
+  display: none;
+}
+
+@media (min-width: 572px) {
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-none {
+    display: none;
+  }
+}
+
 #container_layout {
   max-width: 1440px;
   position: relative;
@@ -377,7 +390,25 @@ body {
 }
 
 #container_layout #NoLogIn p {
-  font-size: 2.4rem;
+  font-size: 34px !important;
+  max-width: 60rem;
+  margin: auto;
+}
+
+@media (max-width: 1500px) {
+  #container_layout #NoLogIn {
+    zoom: 0.8;
+  }
+}
+
+@media (max-width: 1500px) and (max-width: 1160px) {
+  #container_layout #NoLogIn {
+    zoom: 0.6;
+    font-size: 24px !important;
+  }
+  #container_layout #NoLogIn p {
+    max-width: 50rem;
+  }
 }
 
 #container_layout #NoLogIn .diamong_image_wrapper .diamond_1 {
@@ -389,6 +420,12 @@ body {
   border-radius: 0px;
 }
 
+@media (max-width: 1160px) {
+  #container_layout #NoLogIn .diamong_image_wrapper .diamond_1 {
+    top: -25rem;
+  }
+}
+
 #container_layout #NoLogIn .diamong_image_wrapper .steel_1 {
   position: absolute;
   height: 207.9rem;
@@ -396,6 +433,22 @@ body {
   top: -37.9rem;
   right: -35rem;
   border-radius: 0px;
+}
+
+@media (max-width: 1160px) {
+  #container_layout #NoLogIn .diamong_image_wrapper .steel_1 {
+    top: -25rem;
+  }
+}
+
+@media (max-width: 1160px) and (max-width: 592px) {
+  #container_layout #NoLogIn .diamong_image_wrapper .steel_1 {
+    top: 35rem;
+  }
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .diamond_1_copy {
+  top: 120rem;
 }
 
 #container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper {
@@ -408,6 +461,12 @@ body {
   top: 43.6rem;
   background: url("./assets/img/SHIELD_RIGHT.png") center/100% 100% no-repeat;
   padding-left: 3.3rem;
+}
+
+@media (max-width: 1160px) {
+  #container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper {
+    top: 70rem;
+  }
 }
 
 #container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper h2 {
@@ -434,6 +493,12 @@ body {
   top: 125rem;
 }
 
+@media (max-width: 1160px) {
+  #container_layout #NoLogIn .diamong_image_wrapper .btn_control {
+    top: 150rem;
+  }
+}
+
 #container_layout #NoLogIn .diamong_image_wrapper .btn_control .btn_roadmap {
   width: 35.3rem;
   height: 15.8rem;
@@ -457,6 +522,16 @@ body {
   background: url("./assets/img/roadmap_bg.png") center/100% 100% no-repeat;
 }
 
+@media (max-width: 592px) {
+  #container_layout #NoLogIn .diamong_image_wrapper .btn_control .btn_roadmap {
+    font-size: 5.4rem;
+  }
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .btn_control_top {
+  top: 52rem;
+}
+
 #container_layout #LogInPage .page_content {
   max-width: 60.7rem;
   margin: auto;
@@ -472,9 +547,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #container_layout #LogInPage .page_content .ul_list_wrapper li {
@@ -497,6 +572,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin: 0px 2rem;
 }
 
 #container_layout #LogInPage .page_content .ul_list_wrapper li p {
@@ -531,6 +607,15 @@ body {
   pointer-events: none;
 }
 
+@media (max-width: 1150px) {
+  #container_layout #LogInPage .diamong_image_wrapper {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transform-origin: center -90rem;
+            transform-origin: center -90rem;
+  }
+}
+
 #container_layout #LogInPage .diamong_image_wrapper .diamond_1 {
   position: absolute;
   height: 207.9rem;
@@ -539,6 +624,16 @@ body {
   left: -35rem;
   border-radius: 0px;
   background: url("./assets/img/diamond_2_log.png") 85% 89%/70% 76% no-repeat;
+}
+
+@media (max-width: 1300px) {
+  #container_layout #LogInPage .diamong_image_wrapper .diamond_1 {
+    background: url("./assets/img/diamond_2_log.png") 58% 57%/61% 55% no-repeat;
+  }
+}
+
+#container_layout #LogInPage .diamong_image_wrapper .diamond_1.diamond_1_copy {
+  top: 65rem;
 }
 
 #container_layout #LogInPage .diamong_image_wrapper .steel_1 {
@@ -551,6 +646,18 @@ body {
   background: url("./assets/img/steel_1_log.png") 85% 89%/70% 76% no-repeat;
 }
 
+@media (max-width: 1300px) {
+  #container_layout #LogInPage .diamong_image_wrapper .steel_1 {
+    background: url("./assets/img/steel_1_log.png") 95% 57%/61% 55% no-repeat;
+  }
+}
+
+@media (max-width: 1300px) and (max-width: 1050px) {
+  #container_layout #LogInPage .diamong_image_wrapper .steel_1 {
+    top: 10rem;
+  }
+}
+
 #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper {
   position: absolute;
   left: 26%;
@@ -561,6 +668,19 @@ body {
   top: 43.6rem;
   background: url("./assets/img/SHIELD_RIGHT.png") center/100% 100% no-repeat;
   padding-left: 3.3rem;
+}
+
+@media (max-width: 1300px) {
+  #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper {
+    zoom: 0.7;
+    top: 73.6rem;
+  }
+}
+
+@media (max-width: 1300px) and (max-width: 1050px) {
+  #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper {
+    left: 36%;
+  }
 }
 
 #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper h2 {
@@ -587,6 +707,20 @@ body {
   background: url("./assets/img/shield_2.png") center/100% 100% no-repeat;
   color: #fff;
   padding-left: 3.3rem;
+}
+
+@media (max-width: 1300px) {
+  #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 {
+    zoom: 0.7;
+    top: 73.6rem;
+  }
+}
+
+@media (max-width: 1300px) and (max-width: 1050px) {
+  #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 {
+    top: 150.6rem;
+    right: 29.87%;
+  }
 }
 
 #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 * {
@@ -719,5 +853,11 @@ body {
   text-decoration: none;
   color: #fff !important;
   background: url("./assets/img/roadmap_bg.png") center/100% 100% no-repeat;
+}
+
+@media (max-width: 1050px) {
+  #container_layout #LogInPage .diamong_image_wrapper .btn_control {
+    top: 165rem;
+  }
 }
 /*# sourceMappingURL=App.css.map */
