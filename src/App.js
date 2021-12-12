@@ -10,16 +10,16 @@ function App() {
   return (
     <div className="App">
       <div id="container_layout">
-        <Layout>
-          <BrowserRouter>
+        <BrowserRouter>
+          <Layout>
             <Routes>
-              <Route path="/" element={<Whitepaper />} />
+              <Route path="/" element={<NoLogIn />} />
+              <Route path="whitepaper" element={<Whitepaper />} />
               <Route path="roadmap" element={<RoadMap />} />
-              <Route path="no_log_in" element={<NoLogIn />} />
               <Route path="log_in_page" element={<LogInPage />} />
             </Routes>
-          </BrowserRouter>
-        </Layout>
+          </Layout>
+        </BrowserRouter>
       </div>
     </div>
   );

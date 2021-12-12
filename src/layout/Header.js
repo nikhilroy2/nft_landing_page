@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 function Header(props) {
   return (
     <header id="header">
@@ -39,14 +39,14 @@ function Header(props) {
           <a href="#" className="anchor_bg">
             CONNECT WALLET
           </a>
-          <a href="#" className="anchor_bg">
+          <Link className="anchor_bg" to="/whitepaper">
             WHITEPAPER
-          </a>
+          </Link>
         </div>
       </div>
 
       <div className="logo_wrapper">
-          <img src={require('../assets/img/logo.png').default} alt="logo" />
+        <img src={require("../assets/img/logo.png").default} alt="logo" />
       </div>
     </header>
   );
