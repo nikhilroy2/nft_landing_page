@@ -52,30 +52,32 @@ function DiamondImageControl() {
       <div className="shield_wrapper">
         <h2>GAME STATS</h2>
         <table>
-          <tr>
-            <td>WARRIORS MINTED</td>
-            <td>1237591</td>
-          </tr>
-          <tr>
-            <td>WARRIORS STAKED</td>
-            <td>1237591</td>
-          </tr>
-          <tr>
-            <td>VIKINGS MINTED</td>
-            <td>1237591</td>
-          </tr>
-          <tr>
-            <td>VIKINGS STAKED</td>
-            <td>1237591</td>
-          </tr>
-          <tr>
-            <td>STOLEN WARRIORS</td>
-            <td>1237591</td>
-          </tr>
-          <tr>
-            <td>STOLEN VIKINGS</td>
-            <td>1237591</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>WARRIORS MINTED</td>
+              <td>1237591</td>
+            </tr>
+            <tr>
+              <td>WARRIORS STAKED</td>
+              <td>1237591</td>
+            </tr>
+            <tr>
+              <td>VIKINGS MINTED</td>
+              <td>1237591</td>
+            </tr>
+            <tr>
+              <td>VIKINGS STAKED</td>
+              <td>1237591</td>
+            </tr>
+            <tr>
+              <td>STOLEN WARRIORS</td>
+              <td>1237591</td>
+            </tr>
+            <tr>
+              <td>STOLEN VIKINGS</td>
+              <td>1237591</td>
+            </tr>
+          </tbody>
         </table>
       </div>
 
@@ -89,9 +91,18 @@ function DiamondImageControl() {
             </div>
           </div>
           <div className="content_img_wrapper">
-            <SmImgShield src={require("../../assets/img/sm_diamond1.png").default} name="UNSTAKED"></SmImgShield>
-            <SmImgShield src={require("../../assets/img/sm_diamond1.png").default} name="WARRIOR BATTALION"></SmImgShield>
-            <SmImgShield src={require("../../assets/img/sm_diamond2.png").default} name="VIKINGS CREW"></SmImgShield>
+            <SmImgShield
+              src={require("../../assets/img/sm_diamond1.png").default}
+              name="UNSTAKED"
+            ></SmImgShield>
+            <SmImgShield
+              src={require("../../assets/img/sm_diamond1.png").default}
+              name="WARRIOR BATTALION"
+            ></SmImgShield>
+            <SmImgShield
+              src={require("../../assets/img/sm_diamond2.png").default}
+              name="VIKINGS CREW"
+            ></SmImgShield>
           </div>
         </div>
       </div>
@@ -104,45 +115,30 @@ function DiamondImageControl() {
   );
 }
 
-function SmImgShield({name, src}) {
+function SmImgShield({ name, src }) {
   return (
     <div className="item">
       <span>{name}</span>
       <div className="img_container">
         <div className="box">
           <div className="img_item">
-            <img
-              src={src}
-              alt="img"
-            />
+            <img src={src} alt="img" />
             <span>10,000</span>
           </div>
           <div className="img_item">
-            <img
-              src={src}
-              alt="img"
-            />
+            <img src={src} alt="img" />
             <span>10,000</span>
           </div>
           <div className="img_item">
-            <img
-              src={src}
-              alt="img"
-            />
+            <img src={src} alt="img" />
             <span>10,000</span>
           </div>
           <div className="img_item">
-            <img
-              src={src}
-              alt="img"
-            />
+            <img src={src} alt="img" />
             <span>10,000</span>
           </div>
           <div className="img_item">
-            <img
-              src={src}
-              alt="img"
-            />
+            <img src={src} alt="img" />
             <span>10,000</span>
           </div>
         </div>
