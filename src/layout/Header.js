@@ -37,9 +37,21 @@ function Header(props) {
           </a>
         </div>
         <div className="right_box">
-          <a href="#" className="anchor_bg">
-            CONNECT WALLET
-          </a>
+          {useLocation().pathname == "/" ? (
+            ""
+          ) : (
+            <Link className="anchor_bg" to="/">
+              HOME
+            </Link>
+          )}
+          {useLocation().pathname == "/" ? (
+            <Link className="anchor_bg" to="/log_in_page">
+              CONNECT WALLET
+            </Link>
+          ) : (
+            ""
+          )}
+
           {useLocation().pathname == "/whitepaper" ? (
             <Link className="anchor_bg" to="/roadmap">
               ROADMAP

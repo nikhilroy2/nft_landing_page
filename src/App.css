@@ -137,6 +137,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-weight: normal;
+  margin-right: 2.1rem;
 }
 
 @media (max-width: 600px) {
@@ -149,8 +150,8 @@ body {
   }
 }
 
-#container_layout header#header .right_box .anchor_bg:nth-child(1) {
-  margin-right: 2.1rem;
+#container_layout header#header .right_box .anchor_bg:last-child {
+  margin-right: 0px;
 }
 
 #container_layout header#header .logo_wrapper {
