@@ -8,6 +8,8 @@
 html,
 body {
   margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 :root {
@@ -16,6 +18,7 @@ body {
 
 #container_layout {
   max-width: 1440px;
+  position: relative;
   margin: auto;
 }
 
@@ -118,6 +121,12 @@ body {
   width: 20.4rem;
   height: 20.4rem;
   margin-top: -3.4rem;
+}
+
+@media (max-width: 900px) {
+  #container_layout header#header .logo_wrapper img {
+    margin-top: 0rem;
+  }
 }
 
 #container_layout #Whitepaper {
@@ -334,5 +343,85 @@ body {
   left: calc(50% + 18rem);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+#container_layout #NoLogIn p {
+  font-size: 2.4rem;
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .diamond_1 {
+  position: absolute;
+  height: 207.9rem;
+  width: 126.3rem;
+  top: -41rem;
+  left: -35rem;
+  border-radius: 0px;
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .steel_1 {
+  position: absolute;
+  height: 207.9rem;
+  width: 126.3rem;
+  top: -37.9rem;
+  right: -35rem;
+  border-radius: 0px;
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 49.5rem;
+  height: 63.6rem;
+  top: 43.6rem;
+  background: url("./assets/img/SHIELD_RIGHT.png") center/100% 100% no-repeat;
+  padding-left: 3.3rem;
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper h2 {
+  margin-bottom: 3rem;
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper table {
+  width: 100%;
+  padding: 0px 3rem;
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper table tr td {
+  font-size: 3.6rem;
+  line-height: 2rem;
+  padding-bottom: 4.3rem;
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .btn_control {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 99;
+  top: 125rem;
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .btn_control .btn_roadmap {
+  width: 35.3rem;
+  height: 15.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 9.6rem;
+  line-height: 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  color: #fff !important;
+  background: url("./assets/img/roadmap_bg.png") center/100% 100% no-repeat;
 }
 /*# sourceMappingURL=App.css.map */
