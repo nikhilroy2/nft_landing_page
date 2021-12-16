@@ -177,6 +177,167 @@ body {
       }
     }
   }
+
+  // WHitePaper2
+  #WhitePaper2 {
+    margin-top: -5.9rem;
+    h1 {
+      margin: 4.8rem 0px;
+    }
+    #about_game_details {
+      display: flex;
+      // justify-content: center;
+      position: relative;
+      align-items: center;
+      margin-left: 18.9rem;
+      @media (max-width: 1200px) {
+        margin-left: 0px;
+        justify-content: center;
+      }
+      @media (max-width: 992px) {
+        flex-wrap: wrap;
+      }
+      img {
+        margin-left: 1.7rem;
+        margin-right: 1.7rem;
+        // position: absolute;
+        left: calc(50% - 63.5rem);
+        @media (max-width: 1500px) {
+          position: static;
+          height: 25rem;
+          @media (max-width: 992px) {
+            display: block;
+            height: 18rem;
+          }
+        }
+      }
+
+      p {
+        max-width: 63.5rem;
+        text-align: center;
+      }
+    }
+    #silver_token {
+      display: flex;
+      // justify-content: center;
+      position: relative;
+      align-items: center;
+      margin-left: 13.3rem;
+      @media (max-width: 1200px) {
+        margin-left: 0px;
+        justify-content: center;
+      }
+      @media (max-width: 992px) {
+        flex-wrap: wrap;
+      }
+      img {
+        margin-right: 1.7rem;
+        margin-left: 1.7rem;
+        // position: absolute;
+        right: calc(50% - 63.5rem);
+        @media (max-width: 1500px) {
+          position: static;
+          height: 25rem;
+          @media (max-width: 992px) {
+            display: block;
+            height: 18rem;
+          }
+        }
+      }
+
+      p {
+        max-width: 79.4rem;
+        text-align: center;
+      }
+    }
+    #warrior_attributes {
+      display: flex;
+      position: relative;
+      align-items: center;
+      margin-left: 18.9rem;
+      @media (max-width: 1200px) {
+        margin-left: 0px;
+        justify-content: center;
+      }
+      @media (max-width: 992px) {
+        flex-wrap: wrap;
+      }
+      img {
+        margin-left: 1.7rem;
+        margin-right: 1.7rem;
+        // position: absolute;
+        left: calc(50% - 63.5rem);
+        @media (max-width: 1500px) {
+          position: static;
+          height: 25rem;
+          @media (max-width: 992px) {
+            display: block;
+            height: 18rem;
+          }
+        }
+      }
+
+      p {
+        max-width: 64.8rem;
+        text-align: center;
+      }
+    }
+    #rarity_ranking_wrapper{
+      text-align: center;
+      .title{
+        max-width: 49.7rem;
+        background: #C4C4C4;
+        padding: 3.4rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        h2{
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0px;
+          margin-bottom: .7rem;
+          width: 39.4rem;
+          padding: 3.7rem;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          color: white;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        li{
+          &:nth-child(1){
+            h2{
+              background: #204988;
+            }
+          }
+          &:nth-child(2){
+            h2{
+              background: #97A9B4;
+            }
+          }
+          &:nth-child(3){
+            h2{
+              background: #C9AF3C;
+            }
+          }
+          &:nth-child(4){
+            h2{
+              background: #A78E57;
+            }
+          }
+          &:nth-child(5){
+            h2{
+              background: #3F3B3B;
+            }
+          }
+        }
+      }
+    }
+  }
+
   #RoadMap {
     @media (max-width: 1100px) {
       zoom: 0.6;

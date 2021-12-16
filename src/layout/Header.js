@@ -65,7 +65,7 @@ function Header(props) {
       </div>
 
       <div className="logo_wrapper">
-        <img src={require("../assets/img/logo.png").default} alt="logo" />
+        <img src={require("../assets/img/area_royale_logo.png").default} alt="logo" />
       </div>
     </header>
   );
