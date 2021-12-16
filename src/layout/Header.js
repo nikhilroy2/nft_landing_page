@@ -38,14 +38,7 @@ function Header(props) {
         </div>
         <div className="right_box">
           {useLocation().pathname == "/" ? (
-            ""
-          ) : (
-            <Link className="anchor_bg" to="/">
-              HOME
-            </Link>
-          )}
-          {useLocation().pathname == "/" ? (
-            <Link className="anchor_bg" to="/log_in_page">
+            <Link className="anchor_bg anchor_login" to="/log_in_page">
               CONNECT WALLET
             </Link>
           ) : (
@@ -61,11 +54,30 @@ function Header(props) {
               WHITEPAPER
             </Link>
           )}
+
+          {useLocation().pathname == "/" ? (
+            <Link className="anchor_bg" to="/roadmap">
+              ROADMAP
+            </Link>
+          ) : (
+            ""
+          )}
+
+          {useLocation().pathname == "/log_in_page" ? (
+            <Link className="anchor_bg" to="/roadmap">
+              ROADMAP
+            </Link>
+          ) : (
+            ""
+          )}
         </div>
       </div>
 
       <div className="logo_wrapper">
-        <img src={require("../assets/img/area_royale_logo.png").default} alt="logo" />
+        <img
+          src={require("../assets/img/area_royale_logo.png").default}
+          alt="logo"
+        />
       </div>
     </header>
   );

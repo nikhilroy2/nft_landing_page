@@ -6,7 +6,8 @@
 }
 
 html,
-body, .App {
+body,
+.App {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
@@ -147,8 +148,9 @@ body, .App {
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 125px;
-  height: 56px;
-  background: url("./assets/img/wh_btn.svg") no-repeat center/cover;
+  height: 46px;
+  background: #000;
+  border-radius: 2.7rem;
   text-align: center;
   font-size: 24px;
   color: #fff;
@@ -162,6 +164,10 @@ body, .App {
           align-items: center;
   font-weight: normal;
   margin-right: 2.1rem;
+}
+
+#container_layout header#header .right_box .anchor_bg.anchor_login {
+  width: 14.9rem;
 }
 
 @media (max-width: 600px) {
@@ -186,7 +192,7 @@ body, .App {
   display: inline-block;
   width: 20.4rem;
   height: 20.4rem;
-  margin-top: -6rem;
+  margin-top: -4rem;
 }
 
 @media (max-width: 900px) {
@@ -775,14 +781,16 @@ body, .App {
 }
 
 #container_layout #NoLogIn p {
-  font-size: 34px !important;
-  max-width: 60rem;
+  font-size: 24px !important;
+  max-width: 57rem;
   margin: auto;
+  margin-top: -6rem;
 }
 
 @media (max-width: 1500px) {
   #container_layout #NoLogIn {
     zoom: 0.8;
+    font-size: 34px !important;
   }
 }
 
@@ -790,6 +798,7 @@ body, .App {
   #container_layout #NoLogIn {
     zoom: 0.6;
     font-size: 24px !important;
+    font-size: 40px !important;
   }
   #container_layout #NoLogIn p {
     max-width: 50rem;
@@ -837,6 +846,7 @@ body, .App {
 }
 
 #container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper {
+  pointer-events: visible;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -846,6 +856,7 @@ body, .App {
   top: 43.6rem;
   background: url("./assets/img/SHIELD_RIGHT.png") center/100% 100% no-repeat;
   padding-left: 3.3rem;
+  text-align: center;
 }
 
 @media (max-width: 1160px) {
@@ -856,17 +867,55 @@ body, .App {
 
 #container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper h2 {
   margin-bottom: 3rem;
+  background: #000;
+  color: white;
+  display: inline-block;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 27px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper table,
+#container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper tr,
+#container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper td {
+  border: hidden;
 }
 
 #container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper table {
-  width: 100%;
-  padding: 0px 3rem;
+  width: calc(100% - 6rem);
+  margin: auto;
+  margin-right: 4rem;
+  padding: 2px 5rem;
+  border-collapse: collapse;
+  border: none;
 }
 
 #container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper table tr td {
+  border: none;
+  outline: none;
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper table tr td b {
+  display: block;
+  font-weight: 400;
   font-size: 3.6rem;
   line-height: 2rem;
-  padding-bottom: 4.3rem;
+  padding: 1.3rem;
+  background: #000;
+  color: white;
+  margin-bottom: 0.5rem;
+  -webkit-box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper table tr td:nth-child(odd) b {
+  border-radius: 2.7rem 0px 0px 2.7rem;
+}
+
+#container_layout #NoLogIn .diamong_image_wrapper .shield_wrapper table tr td:nth-child(even) b {
+  border-radius: 0px 2.7rem 2.7rem 0px;
 }
 
 #container_layout #NoLogIn .diamong_image_wrapper .btn_control {

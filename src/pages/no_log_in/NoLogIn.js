@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 function NoLogIn(props) {
   return (
@@ -14,7 +14,7 @@ function NoLogIn(props) {
           src={require("../../assets/img/diamond_1.png").default}
           alt="diamond_1"
         />
-         <img
+        <img
           className="diamond_1 diamond_1_copy d-sm-none"
           src={require("../../assets/img/diamond_1.png").default}
           alt="diamond_1"
@@ -26,36 +26,60 @@ function NoLogIn(props) {
         />
         <div className="shield_wrapper">
           <h2>GAME STATS</h2>
-          <table>
+          <table cellSpacing="0" cellPadding="0">
             <tbody>
               <tr>
-                <td>WARRIORS MINTED</td>
-                <td>1237591</td>
+                <td>
+                  <b>WARRIORS MINTED</b>
+                </td>
+                <td>
+                  <b>1237591</b>
+                </td>
               </tr>
               <tr>
-                <td>WARRIORS STAKED</td>
-                <td>1237591</td>
+                <td>
+                  <b>WARRIORS STAKED</b>
+                </td>
+                <td>
+                  <b>1237591</b>
+                </td>
               </tr>
               <tr>
-                <td>VIKINGS MINTED</td>
-                <td>1237591</td>
+                <td>
+                  <b>VIKINGS MINTED</b>
+                </td>
+                <td>
+                  <b>1237591</b>
+                </td>
               </tr>
               <tr>
-                <td>VIKINGS STAKED</td>
-                <td>1237591</td>
+                <td>
+                  <b>VIKINGS STAKED</b>
+                </td>
+                <td>
+                  <b>1237591</b>
+                </td>
               </tr>
               <tr>
-                <td>STOLEN WARRIORS</td>
-                <td>1237591</td>
+                <td>
+                  <b>STOLEN WARRIORS</b>
+                </td>
+                <td>
+                  <b>1237591</b>
+                </td>
               </tr>
               <tr>
-                <td>STOLEN VIKINGS</td>
-                <td>1237591</td>
+                <td>
+                  <b>STOLEN VIKINGS</b>
+                </td>
+                <td>
+                  <b>1237591</b>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div className="btn_control_top btn_control d-sm-none">
+        {/* <div className="btn_control_top btn_control d-sm-none">
           <Link to="/roadmap" className="btn_roadmap">
             CONNECT WALLET
           </Link>
@@ -65,7 +89,7 @@ function NoLogIn(props) {
           <Link to="/roadmap" className="btn_roadmap">
             ROADMAP
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

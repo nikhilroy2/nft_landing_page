@@ -6,13 +6,14 @@
 }
 
 html,
-body,.App {
+body,
+.App {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
 }
-.App.appBg{
-  background: url('./assets/img/game_background.png') 50% top/cover no-repeat;
+.App.appBg {
+  background: url("./assets/img/game_background.png") 50% top/cover no-repeat;
 }
 $color_diamond: #204988;
 $color_steel: #97a9b4;
@@ -112,8 +113,10 @@ $color_c4: #c4c4c4;
       .anchor_bg {
         display: inline-flex;
         width: 125px;
-        height: 56px;
-        background: url("./assets/img/wh_btn.svg") no-repeat center/cover;
+        height: 46px;
+        // background: url("./assets/img/wh_btn.svg") no-repeat center/cover;
+        background: #000;
+        border-radius: 2.7rem;
         text-align: center;
         font-size: 24px;
         color: #fff;
@@ -123,6 +126,9 @@ $color_c4: #c4c4c4;
         align-items: center;
         font-weight: normal;
         margin-right: 2.1rem;
+        &.anchor_login{
+          width: 14.9rem;
+        }
         @media (max-width: 600px) {
           width: 8rem;
           height: 3.3rem;
@@ -141,7 +147,7 @@ $color_c4: #c4c4c4;
         display: inline-block;
         width: 20.4rem;
         height: 20.4rem;
-        margin-top: -6rem;
+        margin-top: -4rem;
         @media (max-width: 900px) {
           margin-top: 0rem;
         }
@@ -617,15 +623,18 @@ $color_c4: #c4c4c4;
     pointer-events: none;
 
     p {
-      font-size: 34px !important;
-      max-width: 60rem;
+      font-size: 24px !important;
+      max-width: 57rem;
       margin: auto;
+      margin-top: -6rem;
     }
     @media (max-width: 1500px) {
       zoom: 0.8;
+      font-size: 34px !important;
       @media (max-width: 1160px) {
         zoom: 0.6;
         font-size: 24px !important;
+        font-size: 40px !important;
         p {
           max-width: 50rem;
         }
@@ -661,6 +670,7 @@ $color_c4: #c4c4c4;
         top: 120rem;
       }
       .shield_wrapper {
+        pointer-events: visible;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -670,20 +680,57 @@ $color_c4: #c4c4c4;
         background: url("./assets/img/SHIELD_RIGHT.png") center/100% 100%
           no-repeat;
         padding-left: 3.3rem;
+        text-align: center;
         @media (max-width: 1160px) {
           top: 70rem;
         }
         h2 {
           margin-bottom: 3rem;
+          background: #000;
+          color: white;
+          display: inline-block;
+          padding: 2rem;
+          box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+          border-radius: 27px;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        table,
+        tr,
+        td {
+          border: hidden;
         }
         table {
-          width: 100%;
-          padding: 0px 3rem;
+          width: calc(100% - 6rem);
+          margin: auto;
+          margin-right: 4rem;
+          padding: 2px 5rem;
+          border-collapse: collapse;
+          border: none;
           tr {
             td {
-              font-size: 3.6rem;
-              line-height: 2rem;
-              padding-bottom: 4.3rem;
+              border: none;
+              outline: none;
+              b {
+                display: block;
+                font-weight: 400;
+                font-size: 3.6rem;
+                line-height: 2rem;
+                padding: 1.3rem;
+                background: #000;
+                color: white;
+                margin-bottom: 0.5rem;
+                box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+              }
+              &:nth-child(odd) {
+                b {
+                  border-radius: 2.7rem 0px 0px 2.7rem;
+                }
+              }
+              &:nth-child(even) {
+                b {
+                  border-radius: 0px 2.7rem 2.7rem 0px;
+                }
+              }
             }
           }
         }
