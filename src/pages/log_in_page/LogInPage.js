@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react/cjs/react.development";
 export default LogInPage;
 function LogInPage(props) {
   const [amountItem, setAmountItem] = useState(1);
@@ -31,8 +32,18 @@ function LogInPage(props) {
           </li>
           <li className="btn_cost_action_list">
             <div className="amount_control">
-              AMOUNT : <span onClick={() => amountMinus()}> &lt;</span>{" "}
-              {amountItem} <span onClick={() => amountPlus()}> &gt;</span>
+              <span className="amount_btn">AMOUNT :</span>
+              <div className="amount_btn">
+                <span className="btn_animate" onClick={() => amountMinus()}>
+                  {" "}
+                  &lt;
+                </span>{" "}
+                {amountItem}{" "}
+                <span className="btn_animate" onClick={() => amountPlus()}>
+                  {" "}
+                  &gt;
+                </span>
+              </div>
             </div>
             <span className="cost_value">COST : {cost} </span>
           </li>
@@ -52,31 +63,55 @@ function DiamondImageControl() {
       <div className="steel_1"></div>
       <div className="shield_wrapper">
         <h2>GAME STATS</h2>
-        <table>
+        <table cellSpacing="0" cellPadding="0">
           <tbody>
             <tr>
-              <td>WARRIORS MINTED</td>
-              <td>1237591</td>
+              <td>
+                <b>WARRIORS MINTED</b>
+              </td>
+              <td>
+                <b>1237591</b>
+              </td>
             </tr>
             <tr>
-              <td>WARRIORS STAKED</td>
-              <td>1237591</td>
+              <td>
+                <b>WARRIORS STAKED</b>
+              </td>
+              <td>
+                <b>1237591</b>
+              </td>
             </tr>
             <tr>
-              <td>VIKINGS MINTED</td>
-              <td>1237591</td>
+              <td>
+                <b>VIKINGS MINTED</b>
+              </td>
+              <td>
+                <b>1237591</b>
+              </td>
             </tr>
             <tr>
-              <td>VIKINGS STAKED</td>
-              <td>1237591</td>
+              <td>
+                <b>VIKINGS STAKED</b>
+              </td>
+              <td>
+                <b>1237591</b>
+              </td>
             </tr>
             <tr>
-              <td>STOLEN WARRIORS</td>
-              <td>1237591</td>
+              <td>
+                <b>STOLEN WARRIORS</b>
+              </td>
+              <td>
+                <b>1237591</b>
+              </td>
             </tr>
             <tr>
-              <td>STOLEN VIKINGS</td>
-              <td>1237591</td>
+              <td>
+                <b>STOLEN VIKINGS</b>
+              </td>
+              <td>
+                <b>1237591</b>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -86,15 +121,12 @@ function DiamondImageControl() {
         <h2>YOUR STATS</h2>
         <div className="shield_content_wrapper">
           <div className="content">
-            <div className="content_head">
-              <span>SILVER POUCH</span>
-              <span>$100000000</span>
-            </div>
+            <div className="content_head">MY SILVER : $100000000</div>
           </div>
           <div className="content_img_wrapper">
             <SmImgShield
               src={require("../../assets/img/sm_diamond1.png").default}
-              name="UNSTAKED"
+              name="INVENTORY"
             ></SmImgShield>
             <SmImgShield
               src={require("../../assets/img/sm_diamond1.png").default}
@@ -107,46 +139,52 @@ function DiamondImageControl() {
           </div>
         </div>
       </div>
-      <div className="btn_control">
+      {/* <div className="btn_control">
         <Link to="/roadmap" className="btn_roadmap">
           ROADMAP
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }
 
 function SmImgShield({ name, src }) {
+  const [manSelect, setManSelect] = useState(false);
+
+  function selectManFunc(v){
+    Array.from(v.target.parentElement.children).forEach(v=> v.classList.remove('active_item'))
+    v.target.classList.add('active_item')
+  }
   return (
     <div className="item">
       <span>{name}</span>
       <div className="img_container">
         <div className="box">
-          <div className="img_item">
+          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className="img_item">
+          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className="img_item">
+          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className="img_item">
+          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className="img_item">
+          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className="img_item">
+          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className="img_item">
+          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>

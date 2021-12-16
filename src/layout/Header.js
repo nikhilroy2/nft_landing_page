@@ -38,25 +38,44 @@ function Header(props) {
         </div>
         <div className="right_box">
           {useLocation().pathname == "/" ? (
-            <Link className="anchor_bg anchor_login" to="/log_in_page">
+            <Link
+              className="anchor_bg anchor_login btn_animate"
+              to="/log_in_page"
+            >
               CONNECT WALLET
             </Link>
           ) : (
             ""
           )}
 
+          {useLocation().pathname === "/whitepaper" ? (
+            <Link className="anchor_bg btn_animate" to="/">
+              HOME
+            </Link>
+          ) : (
+            ""
+          )}
+
+          {useLocation().pathname == "/roadmap" ? (
+            <Link className="anchor_bg btn_animate" to="/">
+              HOME
+            </Link>
+          ) : (
+            ""
+          )}
+
           {useLocation().pathname == "/whitepaper" ? (
-            <Link className="anchor_bg" to="/roadmap">
+            <Link className="anchor_bg btn_animate" to="/roadmap">
               ROADMAP
             </Link>
           ) : (
-            <Link className="anchor_bg" to="/whitepaper">
+            <Link className="anchor_bg btn_animate" to="/whitepaper">
               WHITEPAPER
             </Link>
           )}
 
           {useLocation().pathname == "/" ? (
-            <Link className="anchor_bg" to="/roadmap">
+            <Link className="anchor_bg btn_animate" to="/roadmap">
               ROADMAP
             </Link>
           ) : (
@@ -64,7 +83,7 @@ function Header(props) {
           )}
 
           {useLocation().pathname == "/log_in_page" ? (
-            <Link className="anchor_bg" to="/roadmap">
+            <Link className="anchor_bg btn_animate" to="/roadmap">
               ROADMAP
             </Link>
           ) : (
