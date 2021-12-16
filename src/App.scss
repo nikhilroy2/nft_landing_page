@@ -11,6 +11,13 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
+$color_diamond: #204988;
+$color_steel: #97a9b4;
+$color_gold: #c9af3c;
+$color_bronze: #a78e57;
+$color_iron: #3f3b3b;
+$color_c4: #c4c4c4;
+
 :root {
   font-size: 10px;
   @media (max-width: 800px) {
@@ -282,55 +289,203 @@ body {
         text-align: center;
       }
     }
-    #rarity_ranking_wrapper{
+    #rarity_ranking_wrapper {
       text-align: center;
-      .title{
+      .title {
         max-width: 49.7rem;
-        background: #C4C4C4;
+        background: #c4c4c4;
         padding: 3.4rem;
         margin-left: auto;
         margin-right: auto;
       }
-      ul{
+      ul {
         margin: 0;
         padding: 0;
         list-style: none;
         text-align: center;
-        h2{
+        h2 {
           margin-left: auto;
           margin-right: auto;
           margin-top: 0px;
-          margin-bottom: .7rem;
+          margin-bottom: 0.7rem;
           width: 39.4rem;
           padding: 3.7rem;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           color: white;
           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
-        li{
-          &:nth-child(1){
-            h2{
+        li {
+          &:nth-child(1) {
+            h2 {
               background: #204988;
             }
           }
-          &:nth-child(2){
-            h2{
-              background: #97A9B4;
+          &:nth-child(2) {
+            h2 {
+              background: #97a9b4;
             }
           }
-          &:nth-child(3){
-            h2{
-              background: #C9AF3C;
+          &:nth-child(3) {
+            h2 {
+              background: #c9af3c;
             }
           }
-          &:nth-child(4){
-            h2{
-              background: #A78E57;
+          &:nth-child(4) {
+            h2 {
+              background: #a78e57;
             }
           }
-          &:nth-child(5){
-            h2{
-              background: #3F3B3B;
+          &:nth-child(5) {
+            h2 {
+              background: #3f3b3b;
+            }
+          }
+        }
+      }
+    }
+
+    .knights_wrapper {
+      h2 {
+        margin-bottom: 0px;
+        margin-top: 10rem;
+      }
+    }
+
+    #knights {
+      display: flex;
+      // justify-content: center;
+      position: relative;
+      align-items: center;
+      margin-left: 16.7rem;
+      @media (max-width: 1200px) {
+        margin-left: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      img {
+        margin-top: -10rem;
+      }
+      .knights_content {
+        table {
+          max-width: 54rem;
+          thead {
+            td {
+              font-size: 3.6rem;
+              width: 17.4rem;
+              padding: 0.8rem;
+              text-align: center;
+              background: #c4c4c4;
+              outline: 0.5rem solid white;
+            }
+          }
+          tbody {
+            td {
+              font-size: 2.4rem;
+              background: #c4c4c4;
+              height: 8.9rem;
+              text-align: center;
+              outline: 0.5rem solid white;
+              small {
+                font-size: 1.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .weapons_wrapper {
+      text-align: center;
+      h3 {
+        width: 27.7rem;
+        background: $color_c4;
+        padding: 1.5rem 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.1rem;
+      }
+      #weapons {
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+        width: 95%;
+        margin: auto;
+        &.armor_wrapper_table {
+          @media (max-width: 1200px) {
+            justify-content: flex-start;
+          }
+        }
+        &.weapons2_wrapper_table {
+          @media (max-width: 950px) {
+            justify-content: flex-start;
+          }
+        }
+        table {
+          thead {
+            td {
+              b {
+                font-size: 6.4rem;
+                min-width: 17.6rem;
+                text-align: center;
+                background: $color_c4;
+                padding: 1rem;
+                display: block;
+                font-weight: 400;
+                margin-bottom: 2.2rem;
+                margin-right: 6rem;
+              }
+            }
+          }
+          tbody {
+            td {
+              b {
+                font-weight: 400;
+                font-size: 3.6rem;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                color: white;
+                padding: 0.6rem;
+                margin-right: 6rem;
+                display: block;
+              }
+            }
+            tr {
+              td:last-child b {
+                margin-right: 0px;
+              }
+              &:nth-child(1) {
+                td {
+                  b {
+                    background: $color_diamond;
+                  }
+                }
+              }
+              &:nth-child(2) {
+                td {
+                  b {
+                    background: $color_steel;
+                  }
+                }
+              }
+              &:nth-child(3) {
+                td {
+                  b {
+                    background: $color_gold;
+                  }
+                }
+              }
+              &:nth-child(4) {
+                td {
+                  b {
+                    background: $color_bronze;
+                  }
+                }
+              }
+              &:nth-child(5) {
+                td {
+                  b {
+                    background: $color_iron;
+                  }
+                }
+              }
             }
           }
         }
