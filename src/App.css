@@ -720,7 +720,7 @@ body {
 }
 
 #container_layout #RoadMap .roadMap_lineWrapper .roadmap_content [class*="content_item"] {
-  max-width: 41.4rem;
+  max-width: 45rem;
   position: absolute;
 }
 
@@ -728,6 +728,7 @@ body {
   margin-bottom: 0px;
   padding-bottom: 0px;
   line-height: 4rem;
+  white-space: nowrap;
 }
 
 #container_layout #RoadMap .roadMap_lineWrapper .roadmap_content .content_item_1 {
