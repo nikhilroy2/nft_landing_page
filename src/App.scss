@@ -50,9 +50,9 @@ $color_c4: #c4c4c4;
   max-width: 1440px;
   position: relative;
   ::-webkit-scrollbar {
-    height: 8px;
+    height: 5px;
     @media (max-width: 600px1) {
-      height: 5px;
+      height: 4px;
     }
   }
   ::-webkit-scrollbar-track {
@@ -196,7 +196,7 @@ $color_c4: #c4c4c4;
 
   // WHitePaper2
   #WhitePaper2 {
-//    margin-top: -5.9rem;
+    //    margin-top: -5.9rem;
     margin-top: -8rem;
     h1 {
       margin: 4.8rem 0px;
@@ -784,6 +784,9 @@ $color_c4: #c4c4c4;
         padding: 0;
         display: flex;
         justify-content: center;
+        .list_btn {
+          cursor: pointer;
+        }
         li {
           display: inline-block;
           width: 17.8rem;
@@ -1004,9 +1007,26 @@ $color_c4: #c4c4c4;
           }
         }
         .content_img_wrapper {
+          text-align: center;
           .item {
             text-align: center;
             margin-top: 0.5rem;
+            position: relative;
+            max-width: 27.8rem;
+            display: inline-block;
+            button.redu_btn {
+              position: absolute;
+              right: 0px;
+              top: 10%;
+              margin: 0px;
+              padding: 0px;
+              background: transparent;
+              pointer-events: visible;
+              cursor: pointer;
+              box-shadow: none;
+              outline: none;
+              border: none;
+            }
             &:first-child {
               margin-top: 0px;
             }
@@ -1021,10 +1041,10 @@ $color_c4: #c4c4c4;
               text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
             }
             .img_container {
-              background: white;
-              max-width: 33.8rem;
+              background: black;
+              max-width: 27.8rem;
               margin: auto;
-              height: 9rem;
+              height: 7.5rem;
               flex: 1;
               display: flex;
               overflow-y: hidden;
@@ -1038,23 +1058,24 @@ $color_c4: #c4c4c4;
                 min-height: 6.6rem;
                 width: 4.2rem;
                 display: inline-block;
-                margin-right: 1.98rem;
+                margin-right: 5px;
                 pointer-events: visible;
                 cursor: pointer;
-                border: 1px solid transparent;
+                border: 2px solid transparent;
                 border-radius: 0.5rem;
                 transition: 0.1s;
-                *{
+                * {
                   pointer-events: none;
                 }
                 &:last-child {
                   margin-right: 0px;
                 }
-                &:hover, &.active_item {
-                  border: 1px solid rgba(255, 0, 0, 0.527);
+                &:hover,
+                &.active_item {
+                  border: 2px solid rgba(255, 0, 0, 0.527);
                 }
                 img {
-                  height: calc(6.6rem - 1rem);
+                  height: calc(6rem - 1rem);
                 }
                 span {
                   display: block;
@@ -1068,6 +1089,24 @@ $color_c4: #c4c4c4;
                   color: black;
                 }
               }
+            }
+          }
+        }
+        .shield_btn_wrapper {
+          margin-top: 1rem;
+          button {
+            font-size: 1.8rem;
+            text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+            background: black;
+            border: none;
+            outline: none;
+            border-radius: 2.7rem;
+            color: white;
+            padding:  1rem;
+            display: inline-block;
+            width: 13rem;
+            &:first-child{
+              margin-right: .5rem;
             }
           }
         }
@@ -1105,6 +1144,8 @@ $color_c4: #c4c4c4;
 
 .btn_animate {
   transition: 0.3s;
+  cursor: pointer;
+  pointer-events: visible;
   &:hover {
     background: #6200ee !important;
     animation: 0.8s linear btn_animate;

@@ -24,10 +24,10 @@ function LogInPage(props) {
         </p>
 
         <ul className="ul_list_wrapper">
-          <li>
+          <li className="list_btn btn_animate">
             <p>MINT</p>
           </li>
-          <li>
+          <li className="list_btn btn_animate">
             <p>MINT + STAKE</p>
           </li>
           <li className="btn_cost_action_list">
@@ -45,7 +45,7 @@ function LogInPage(props) {
                 </span>
               </div>
             </div>
-            <span className="cost_value">COST : {cost} </span>
+            <span className="cost_value btn_animate">COST : {cost} </span>
           </li>
         </ul>
       </div>
@@ -138,6 +138,10 @@ function DiamondImageControl() {
             ></SmImgShield>
           </div>
         </div>
+        <div className="shield_btn_wrapper">
+          <button className="btn_animate">CLAIM SILVER</button>
+          <button className="btn_animate">CLAIM & UNSTAKE</button>
+        </div>
       </div>
       {/* <div className="btn_control">
         <Link to="/roadmap" className="btn_roadmap">
@@ -149,42 +153,59 @@ function DiamondImageControl() {
 }
 
 function SmImgShield({ name, src }) {
-  const [manSelect, setManSelect] = useState(false);
+  //const [manSelect, setManSelect] = useState(false);
 
-  function selectManFunc(v){
-    Array.from(v.target.parentElement.children).forEach(v=> v.classList.remove('active_item'))
-    v.target.classList.add('active_item')
+  function selectManFunc(v) {
+    Array.from(v.target.parentElement.children).forEach((v) =>
+      v.classList.remove("active_item")
+    );
+    v.target.classList.add("active_item");
   }
   return (
     <div className="item">
       <span>{name}</span>
+
       <div className="img_container">
+        <button className="redu_btn btn_animate">
+          <svg
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.29578 1.70421C7.44994 0.858374 6.28911 0.333374 4.99994 0.333374C2.42161 0.333374 0.339111 2.42171 0.339111 5.00004C0.339111 7.57837 2.42161 9.66671 4.99994 9.66671C7.17578 9.66671 8.98994 8.17921 9.50911 6.16671H8.29578C7.81744 7.52587 6.52244 8.50004 4.99994 8.50004C3.06911 8.50004 1.49994 6.93087 1.49994 5.00004C1.49994 3.06921 3.06911 1.50004 4.99994 1.50004C5.96828 1.50004 6.83161 1.90254 7.46161 2.53837L5.58328 4.41671H9.66661V0.333374L8.29578 1.70421Z"
+              fill="black"
+            />
+          </svg>
+        </button>
         <div className="box">
-          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
+          <div className={`img_item`} onClick={(event) => selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
+          <div className={`img_item`} onClick={(event) => selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
+          <div className={`img_item`} onClick={(event) => selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
+          <div className={`img_item`} onClick={(event) => selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
+          <div className={`img_item`} onClick={(event) => selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
+          <div className={`img_item`} onClick={(event) => selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>
-          <div className={`img_item ${manSelect?'active_item': ''}`} onClick={(event)=> selectManFunc(event)}>
+          <div className={`img_item`} onClick={(event) => selectManFunc(event)}>
             <img src={src} alt="img" />
             <span>10,000</span>
           </div>

@@ -59,12 +59,12 @@ body,
 }
 
 #container_layout ::-webkit-scrollbar {
-  height: 8px;
+  height: 5px;
 }
 
 @media (max-width: 600px1) {
   #container_layout ::-webkit-scrollbar {
-    height: 5px;
+    height: 4px;
   }
 }
 
@@ -994,6 +994,10 @@ body,
           justify-content: center;
 }
 
+#container_layout #LogInPage .page_content .ul_list_wrapper .list_btn {
+  cursor: pointer;
+}
+
 #container_layout #LogInPage .page_content .ul_list_wrapper li {
   display: inline-block;
   width: 17.8rem;
@@ -1257,9 +1261,31 @@ body,
   padding: 0.4rem 1rem;
 }
 
+#container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .content_img_wrapper {
+  text-align: center;
+}
+
 #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .content_img_wrapper .item {
   text-align: center;
   margin-top: 0.5rem;
+  position: relative;
+  max-width: 27.8rem;
+  display: inline-block;
+}
+
+#container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .content_img_wrapper .item button.redu_btn {
+  position: absolute;
+  right: 0px;
+  top: 10%;
+  margin: 0px;
+  padding: 0px;
+  background: transparent;
+  pointer-events: visible;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: none;
 }
 
 #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .content_img_wrapper .item:first-child {
@@ -1278,10 +1304,10 @@ body,
 }
 
 #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .content_img_wrapper .item .img_container {
-  background: white;
-  max-width: 33.8rem;
+  background: black;
+  max-width: 27.8rem;
   margin: auto;
-  height: 9rem;
+  height: 7.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1304,10 +1330,10 @@ body,
   min-height: 6.6rem;
   width: 4.2rem;
   display: inline-block;
-  margin-right: 1.98rem;
+  margin-right: 5px;
   pointer-events: visible;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 0.5rem;
   -webkit-transition: 0.1s;
   transition: 0.1s;
@@ -1322,11 +1348,11 @@ body,
 }
 
 #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .content_img_wrapper .item .img_container .img_item:hover, #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .content_img_wrapper .item .img_container .img_item.active_item {
-  border: 1px solid rgba(255, 0, 0, 0.527);
+  border: 2px solid rgba(255, 0, 0, 0.527);
 }
 
 #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .content_img_wrapper .item .img_container .img_item img {
-  height: calc(6.6rem - 1rem);
+  height: calc(6rem - 1rem);
 }
 
 #container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .content_img_wrapper .item .img_container .img_item span {
@@ -1345,6 +1371,27 @@ body,
           align-items: center;
   background: #c4c4c4;
   color: black;
+}
+
+#container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .shield_btn_wrapper {
+  margin-top: 1rem;
+}
+
+#container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .shield_btn_wrapper button {
+  font-size: 1.8rem;
+  text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  background: black;
+  border: none;
+  outline: none;
+  border-radius: 2.7rem;
+  color: white;
+  padding: 1rem;
+  display: inline-block;
+  width: 13rem;
+}
+
+#container_layout #LogInPage .diamong_image_wrapper .shield_wrapper_2 .shield_btn_wrapper button:first-child {
+  margin-right: .5rem;
 }
 
 #container_layout #LogInPage .diamong_image_wrapper .btn_control {
@@ -1388,6 +1435,8 @@ body,
 .btn_animate {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
+  pointer-events: visible;
 }
 
 .btn_animate:hover {
