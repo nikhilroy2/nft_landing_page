@@ -6,10 +6,14 @@
 }
 
 html,
-body {
+body, .App {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+.App.appBg {
+  background: url("./assets/img/game_background.png") 50% top/cover no-repeat;
 }
 
 :root {
