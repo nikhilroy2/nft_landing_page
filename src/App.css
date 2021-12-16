@@ -263,7 +263,7 @@ body,
 }
 
 #container_layout #WhitePaper2 {
-  margin-top: -5.9rem;
+  margin-top: -8rem;
 }
 
 #container_layout #WhitePaper2 h1 {
@@ -619,6 +619,10 @@ body,
 
 #container_layout #WhitePaper2 .weapons_wrapper #weapons table tbody tr:nth-child(5) td b {
   background: #3f3b3b;
+}
+
+#container_layout #RoadMap {
+  margin-top: -11rem;
 }
 
 @media (max-width: 1100px) {
@@ -1388,8 +1392,8 @@ body,
 
 .btn_animate:hover {
   background: #6200ee !important;
-  -webkit-animation: 0.5s linear btn_animate;
-          animation: 0.5s linear btn_animate;
+  -webkit-animation: 0.8s linear btn_animate;
+          animation: 0.8s linear btn_animate;
 }
 
 @-webkit-keyframes btn_animate {
